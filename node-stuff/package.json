@@ -1,0 +1,15 @@
+{
+    "name": "fun-with-js",
+    "version": "1.0.0",
+    "description": "-   Servers are really easy to setup (server.mjs) -   You can write tests out of the box (test.mgjs) -   .env files are supported without extra packages     SQLite is supported out of the box",
+    "main": "",
+    "type": "module",
+    "scripts": {
+        "db": "node --no-warnings --experimental-sqlite db.js",
+        "serve": "node server.js",
+        "env": "node --env-file=.env env.js",
+        "test": "node test.js"
+    },
+    "author": "",
+    "license": "ISC"
+}

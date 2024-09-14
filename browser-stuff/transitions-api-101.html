@@ -1,0 +1,16 @@
+<!-- https://x.com/calebporzio/status/1833523586008490234 -->
+<ul id="demo" style="view-transition-name: demo">
+    <li id="foo">foo</li>
+    <li id="bar">bar</li>
+    <li id="baz">baz</li>
+</ul>
+
+<button onclick="slide()">Slide</button>
+
+<script>
+    function slide() {
+        document.startViewTransition(() => {
+            demo.style.marginLeft = '100px'
+        })
+    }
+</script>

@@ -1,0 +1,39 @@
+<!-- https://x.com/wesbos/status/1834242925401694490 -->
+<div class="wrap">
+    <img src="https://images.unsplash.com/photo-1484589065579-248aad0d8b13" />
+    <div class="blur">
+        <p>🚀</p>
+    </div>
+</div>
+
+<style>
+    .wrap {
+        display: grid;
+        & > * {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .blur {
+        background: linear-gradient(
+            22deg,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0)
+        );
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        border: 1px solid black;
+    }
+    p {
+        margin-top: 90%;
+    }
+</style>
